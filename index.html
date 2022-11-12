@@ -86,11 +86,11 @@
                             </div>
                             <label class="label_form" for="comment">Коментар</label>
                             <textarea name="comment" placeholder="Введіть коментар" id="comment"></textarea>
-                            <div class="checkbox_form">
-                                <input type="checkbox" required>
-                                <label class="label_form"><span class="checkbox_text">Погоджуюся з розсилкою та приймаю
-                                        <a class="a_checkbox_text" href="/">Умови договору</a></span></label>
-                            </div>
+                            <label class="check">
+                                <input class="check_input" type="checkbox"><span class="check_text"></span>Погоджуюся з
+                                розсилкою та приймаю<a class="text_check_link" href="/">Умови договору</a>
+                            </label>
+
                             <button type="submit" class="btn_form">Відправити</button>
                         </form>
                     </div>
@@ -413,7 +413,7 @@
                     <h3 class="subscribe_text">Підпишіться на розсилку</h3>
                     <div class="sub_element">
                         <input type="email" name="mail_sub" id="mail_sub" placeholder="E-mail" class="input_footer">
-                        <button type="button" class="btn_sub"><span class="sub_text">Підписатися</span>
+                        <button type="submit" class="btn_sub"><span class="sub_text">Підписатися</span>
                             <svg class="icon_sub" width="24" height="24">
                                 <use href="./img/icons.svg/symbol-subscribe.svg#icon-subscribe"></use>
                             </svg>
