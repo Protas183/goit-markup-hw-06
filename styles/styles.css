@@ -274,8 +274,16 @@ p {
 
 .close_button_icon {
   position: absolute;
-  width: 11px;
-  height: 11px;
+  width: 17px;
+  height: 17px;
+}
+
+.close_button:hover .close_button_icon {
+  fill: #2196f3;
+}
+
+.close_button:focus .close_button_icon {
+  fill: #2196f3;
 }
 
 .form {
@@ -317,12 +325,16 @@ p {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
+.form_field input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
 
 .icon_modal {
   position: absolute;
   margin: 0;
   margin-left: 15px;
-  margin-top: 27px;
+  margin-top: 30px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -330,7 +342,12 @@ p {
   fill: #2196f3;
 }
 
+.form_field input:focus + .icon_modal{
+  fill: #2196f3;
+}
+
 .label_form {
+  margin-bottom: 4px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -356,11 +373,20 @@ textarea:hover {
   border-radius: 4px;
 }
 
+textarea::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .check {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .check_input {
@@ -369,8 +395,6 @@ textarea:hover {
   height: 15px;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E");
   cursor: pointer;
-  
-
 }
 
 .check_input:checked {
@@ -378,7 +402,6 @@ textarea:hover {
   background-repeat: no-repeat;
   background-position: center;
   border-color: transparent;
-  
 }
 
 .check_text {
@@ -386,14 +409,32 @@ textarea:hover {
   margin-left: 8px;
 }
 
+.checkbox_text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .text_check_link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
   color: #2196f3;
   margin-left: 3px;
+  text-decoration: underline;
 }
 
 .btn_form {
   display: flex;
   margin: auto;
+  padding: 0;
   margin-top: 30px;
   width: 200px;
   height: 50px;
@@ -401,6 +442,7 @@ textarea:hover {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 
@@ -417,6 +459,10 @@ textarea:hover {
 }
 
 .btn_form:hover {
+  background: #5cb6ff;
+}
+
+.btn_form:focus {
   background: #5cb6ff;
 }
 
@@ -485,7 +531,7 @@ textarea:hover {
 }
 
 .features_tittle {
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -496,7 +542,7 @@ textarea:hover {
 }
 
 .features_describe {
-  margin: 0 auto;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -922,8 +968,8 @@ textarea:hover {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: 0;
   cursor: pointer;
   transition: 250ms;
   display: flex;
@@ -931,6 +977,10 @@ textarea:hover {
 }
 
 .btn_sub:hover {
+  background: #68bbff;
+}
+
+.btn_sub:focus {
   background: #68bbff;
 }
 
