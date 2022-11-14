@@ -57,7 +57,7 @@
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button data-modal-close class="close_button" type="button">
-                            <svg class="close_button_icon" width="20">
+                            <svg class="close_button_icon">
                                 <use href="./img/icons.svg/symbol-defs.svg#icon-close"></use>
                             </svg>
                         </button>
@@ -65,30 +65,38 @@
                             <h2 class="form_title">Залиште свої дані, ми вам передзвонимо</h2>
                             <div class="form_field">
                                 <label class="label_form" for="name">Ім'я</label>
-                                <input type="text" name="name" id="name" required>
-                                <svg class="icon_modal" width="12" height="12">
-                                    <use href="./img/icons.svg/modal-symbol.svg#icon-person" class="icon_form"></use>
-                                </svg>
+                                <div class="div_input">
+                                    <input type="text" name="name" id="name" required>
+                                    <svg class="icon_modal" width="12" height="12">
+                                        <use href="./img/icons.svg/modal-symbol.svg#icon-person" class="icon_form">
+                                        </use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="form_field">
                                 <label class="label_form" for="phone">Телефон</label>
-                                <input type="tel" name="number" id="phone" required>
-                                <svg class="icon_modal" width="13" height="13">
-                                    <use href="./img/icons.svg/modal-symbol.svg#icon-phone" class="icon_form"></use>
-                                </svg>
+                                <div class="div_input">
+                                    <input type="tel" name="number" id="phone" required>
+                                    <svg class="icon_modal" width="13" height="13">
+                                        <use href="./img/icons.svg/modal-symbol.svg#icon-phone" class="icon_form"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="form_field">
                                 <label class="label_form" for="mail">Пошта</label>
-                                <input type="email" name="email" id="mail" required>
-                                <svg class="icon_modal" width="15" height="12">
-                                    <use href="./img/icons.svg/modal-symbol.svg#icon-mail" class="icon_form"></use>
-                                </svg>
+                                <div class="div_input">
+                                    <input type="email" name="email" id="mail" required>
+                                    <svg class="icon_modal" width="15" height="12">
+                                        <use href="./img/icons.svg/modal-symbol.svg#icon-mail" class="icon_form"></use>
+                                    </svg>
+                                </div>
                             </div>
                             <label class="label_form" for="comment">Коментар</label>
                             <textarea name="comment" placeholder="Введіть коментар" id="comment"></textarea>
                             <label class="check">
-                                <input class="check_input" type="checkbox"><span class="check_text"></span><span class="checkbox_text">Погоджуюся з
-                                розсилкою та приймаю</span><a class="text_check_link" href="/">Умови договору</a>
+                                <input class="check_input" type="checkbox"><span class="check_text"></span><span
+                                    class="checkbox_text">Погоджуюся з
+                                    розсилкою та приймаю</span><a class="text_check_link" href="/">Умови договору</a>
                             </label>
 
                             <button type="submit" class="btn_form">Відправити</button>
